@@ -1,0 +1,14 @@
+hdfs namenode -format
+start-all.sh
+cd /home/alvinnguyen41/Alvin04
+ ls $HADOOP_HOME/share/hadoop/common/*.jar
+ls $HADOOP_HOME/share/hadoop/mapreduce/*.jar
+ls $HADOOP_HOME/share/hadoop/hdfs/*.jar
+ls -l src/main/java/org/codewitharjun/
+ javac -cp "$HADOOP_HOME/share/hadoop/common/*:$HADOOP_HOME/share/hadoop/mapreduce/*:$HADOOP_HOME/share/hadoop/hdfs/*" -d . src/main/java/org/codewitharjun/*.java
+hdfs dfs -mkdir /user
+ hdfs dfs -mkdir /user/alvin
+hdfs dfs -mkdir /user/alvin/input
+ hdfs dfs -put babybus.txt /user/alvin/input
+jar -cvf Alvin04-1.0-SNAPSHOT.jar -C ./target/classes
+hadoop jar Alvin04-1.0-SNAPSHOT.jar org.codewitharjun.WC_Runner /user/alvin/input /user/alvin/output
