@@ -1,0 +1,28 @@
+ls -l:
+total 36
+-rw-r--r-- 1 alvinnguyen41 alvinnguyen41  105 Dec 18 09:34 container_tokens
+-rwx------ 1 alvinnguyen41 alvinnguyen41  768 Dec 18 09:34 default_container_executor.sh
+-rwx------ 1 alvinnguyen41 alvinnguyen41  713 Dec 18 09:34 default_container_executor_session.sh
+lrwxrwxrwx 1 alvinnguyen41 alvinnguyen41  123 Dec 18 09:34 job.jar -> /tmp/hadoop-alvinnguyen41/nm-local-dir/usercache/alvinnguyen41/appcache/application_1734513233151_0001/filecache/11/job.jar
+lrwxrwxrwx 1 alvinnguyen41 alvinnguyen41  123 Dec 18 09:34 job.xml -> /tmp/hadoop-alvinnguyen41/nm-local-dir/usercache/alvinnguyen41/appcache/application_1734513233151_0001/filecache/13/job.xml
+drwxrwxr-x 2 alvinnguyen41 alvinnguyen41 4096 Dec 18 09:34 jobSubmitDir
+-rwx------ 1 alvinnguyen41 alvinnguyen41 5351 Dec 18 09:34 launch_container.sh
+drwx--x--- 2 alvinnguyen41 alvinnguyen41 4096 Dec 18 09:34 tmp
+find -L . -maxdepth 5 -ls:
+    89116      4 drwx--x---   4 alvinnguyen41 alvinnguyen41     4096 Dec 18 09:34 .
+    89108    260 -r-x------   1 alvinnguyen41 alvinnguyen41   265647 Dec 18 09:34 ./job.xml
+    89102      4 drwx------   2 alvinnguyen41 alvinnguyen41     4096 Dec 18 09:34 ./job.jar
+    89103      8 -r-x------   1 alvinnguyen41 alvinnguyen41     4271 Dec 18 09:34 ./job.jar/job.jar
+    89118      4 drwx--x---   2 alvinnguyen41 alvinnguyen41     4096 Dec 18 09:34 ./tmp
+    89121      8 -rwx------   1 alvinnguyen41 alvinnguyen41     5351 Dec 18 09:34 ./launch_container.sh
+    89123      4 -rwx------   1 alvinnguyen41 alvinnguyen41      713 Dec 18 09:34 ./default_container_executor_session.sh
+    89119      4 -rw-r--r--   1 alvinnguyen41 alvinnguyen41      105 Dec 18 09:34 ./container_tokens
+    89124      4 -rw-r--r--   1 alvinnguyen41 alvinnguyen41       16 Dec 18 09:34 ./.default_container_executor_session.sh.crc
+    89126      4 -rw-r--r--   1 alvinnguyen41 alvinnguyen41       16 Dec 18 09:34 ./.default_container_executor.sh.crc
+    89122      4 -rw-r--r--   1 alvinnguyen41 alvinnguyen41       52 Dec 18 09:34 ./.launch_container.sh.crc
+    89120      4 -rw-r--r--   1 alvinnguyen41 alvinnguyen41       12 Dec 18 09:34 ./.container_tokens.crc
+    89131      4 drwxrwxr-x   2 alvinnguyen41 alvinnguyen41     4096 Dec 18 09:34 ./jobSubmitDir
+    89105      4 -r-x------   1 alvinnguyen41 alvinnguyen41      211 Dec 18 09:34 ./jobSubmitDir/job.split
+    89098      4 -r-x------   1 alvinnguyen41 alvinnguyen41       40 Dec 18 09:34 ./jobSubmitDir/job.splitmetainfo
+    89125      4 -rwx------   1 alvinnguyen41 alvinnguyen41      768 Dec 18 09:34 ./default_container_executor.sh
+broken symlinks(find -L . -maxdepth 5 -type l -ls):
