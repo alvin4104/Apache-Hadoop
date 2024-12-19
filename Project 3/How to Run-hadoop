@@ -1,0 +1,5 @@
+hdfs namenode -format
+start-all.sh
+hdfs dfs -mkdir /user/alvin/social_media/input
+hdfs dfs -put social_media_data.txt /user/alvin/social_media/input
+hadoop jar SocialMediaAnalysis.jar org.socialmedia.SocialMediaDriver /user/alvin/social_media/input /user/alvin/output
