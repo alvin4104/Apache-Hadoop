@@ -2,7 +2,7 @@ hdfs namenode -format
 start-all.sh
 hdfs dfs -mkdir /user/alvin/sensor_data/input
 hdfs dfs -put sensor_data.csv /user/alvin/sensor_data/input
-ls -l src/main/java/org/sensor/total 12
+ls -l src/main/java/org/sensor/
 javac -cp "$HADOOP_HOME/share/hadoop/common/*:$HADOOP_HOME/share/hadoop/mapreduce/*:$HADOOP_HOME/share/hadoop/hdfs/*" -d . src/main/java/org/sensor/*.java/-strong/-heart:>:o:-((:-h  
 jar -cvf Alvin04-1.0-SNAPSHOT.jar -C ./target/classes .
 added manifest
