@@ -3,7 +3,6 @@ start-all.sh
 hdfs dfs -mkdir /user/alvin/social_media/input
 hdfs dfs -put social_media_data.txt /user/alvin/social_media/input
 ls -l src/main/java/org/socialmeida/
-total 12
 javac -cp "$HADOOP_HOME/share/hadoop/common/*:$HADOOP_HOME/share/hadoop/mapreduce/*:$HADOOP_HOME/share/hadoop/hdfs/*" -d . src/main/java/org/socialmedia/*.java
 hadoop jar SocialMediaAnalysis.jar org.socialmedia.SocialMediaRunner /user/alvin/social_media/input /user/alvin/output
 hdfs dfs -cat /user/alvin/output/part-r-00000
