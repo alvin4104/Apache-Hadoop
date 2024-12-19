@@ -12,3 +12,5 @@ hdfs dfs -mkdir /user/alvin/input
  hdfs dfs -put babybus.txt /user/alvin/input
 jar -cvf Alvin04-1.0-SNAPSHOT.jar -C ./target/classes
 hadoop jar Alvin04-1.0-SNAPSHOT.jar org.codewitharjun.WC_Runner /user/alvin/input /user/alvin/output
+hdfs dfs -cat /user/alvin/output/part-r-00000
+
