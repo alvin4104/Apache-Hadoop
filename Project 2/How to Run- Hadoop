@@ -6,4 +6,5 @@ ls -l src/main/java/org/codebun/
 javac -cp "$HADOOP_HOME/share/hadoop/common/*:$HADOOP_HOME/share/hadoop/mapreduce/*:$HADOOP_HOME/share/hadoop/hdfs/*" -d . src/main/java/org/codebun/*.java
 jar -cvf Alvin04-1.0-SNAPSHOT.jar -C ./target/classes .
 added manifest
-hadoop jar Alvin04-1.0-SNAPSHOT.jar org.codebun.WC_Runner /user/alvin/input /user/alvin/output16:46/-strong/-heart:>:o:-((:-hĐã gửi Xem trước khi gửiThả Files vào đây để xem lại trước khi gửi
+hadoop jar Alvin04-1.0-SNAPSHOT.jar org.codebun.WC_Runner /user/alvin/input /user/alvin/output
+hdfs dfs -cat /user/alvin/output/part-r-00000
